@@ -1,0 +1,244 @@
+Crie uma Landing Page moderna, elegante e responsiva para uma marca de artesanato chamada Decorê Arts, especializada na criação de artes personalizadas e placas decorativas em madeira.
+
+A página deve transmitir sensação artesanal, delicadeza e sofisticação, valorizando produtos feitos à mão.
+
+🎨 Paleta de cores
+
+Utilize exclusivamente esta paleta no design:
+
+Rosa claro: #FFCAD4
+
+Branco: #FAFAFA
+
+Marrom: #785E61
+
+Regras de uso:
+
+Fundo principal: branco
+
+Destaques e botões: rosa
+
+Textos principais e elementos elegantes: marrom
+
+Hover effects suaves com variação do rosa ou marrom
+
+🎯 Objetivo da Landing Page
+
+Divulgar as artes da Decorê Arts, apresentar exemplos de trabalhos já realizados e facilitar o contato para novos pedidos personalizados.
+
+A página deve focar em:
+
+Conversão para contato
+
+Apresentação visual das artes
+
+Experiência agradável em mobile
+
+🧱 Estrutura da Página
+1. Header (Topo do site)
+
+Deve conter:
+
+Logo ou nome Decorê Arts
+
+Menu de navegação com links:
+
+Início
+
+Galeria
+
+Contato
+
+Botão destacado "Peça sua arte"
+
+Design:
+
+Fundo branco
+
+Texto marrom
+
+Botões rosa
+
+Header fixo ao rolar a página
+
+2. Hero Section
+
+Seção principal com grande impacto visual.
+
+Conteúdo:
+
+Título principal:
+
+Artes em madeira que contam histórias
+
+Subtítulo:
+
+Placas e artes personalizadas feitas à mão para tornar seus momentos e ambientes ainda mais especiais.
+
+Elementos:
+
+Botão principal: "Solicitar arte personalizada"
+
+Botão secundário: "Ver trabalhos realizados"
+
+Espaço para imagem de destaque ou mockup de placas em madeira
+
+Design:
+
+Fundo rosa suave
+
+Tipografia elegante
+
+Layout centralizado
+
+Botões grandes e chamativos
+
+3. Grid de Artes / Galeria
+
+Seção com visualização das artes já produzidas.
+
+Estrutura:
+
+Grid responsivo
+
+3 colunas no desktop
+
+2 no tablet
+
+1 no mobile
+
+Cada item deve conter:
+
+Foto da arte
+
+Nome ou descrição da peça
+
+Pequena legenda opcional
+
+Adicionar efeito:
+
+Hover suave
+
+Leve zoom na imagem
+
+Card com sombra suave
+
+Título da seção:
+
+Trabalhos Realizados
+
+4. Seção de Chamada para Ação
+
+Adicionar uma seção convidando para novos pedidos.
+
+Texto exemplo:
+
+Quer uma arte exclusiva para você?
+
+Subtexto:
+
+Criamos placas personalizadas em madeira para presentes, decoração e momentos especiais.
+
+Botão grande:
+
+"Fazer meu pedido no WhatsApp"
+
+5. Botão Flutuante WhatsApp
+
+Adicionar botão fixo no canto inferior direito da tela.
+
+Requisitos:
+
+Ícone do WhatsApp
+
+Cor verde padrão do WhatsApp
+
+Sempre visível
+
+Link para iniciar conversa no WhatsApp
+
+6. Footer
+
+O rodapé deve conter:
+
+Informações:
+
+Nome da marca: Decorê Arts
+
+Pequena frase:
+
+Artes personalizadas em madeira feitas com carinho.
+
+Links:
+
+Instagram
+
+WhatsApp
+
+Email (opcional)
+
+Layout:
+
+Fundo marrom
+
+Texto branco
+
+Ícones sociais
+
+📱 Responsividade
+
+O site deve ser 100% responsivo, funcionando bem em:
+
+Desktop
+
+Tablet
+
+Mobile
+
+A galeria deve reorganizar automaticamente.
+
+✨ Estilo Visual
+
+O design deve ser:
+
+Minimalista
+
+Elegante
+
+Artesanal
+
+Leve
+
+Feminino e acolhedor
+
+Evitar excesso de elementos visuais.
+
+Utilizar:
+
+Bordas suaves
+
+Sombras leves
+
+Espaçamento generoso
+
+⚙️ Tecnologias sugeridas
+
+Preferencialmente utilizar:
+
+React
+
+TailwindCSS
+
+Componentização
+
+Estrutura limpa e organizada
+
+🖼️ Conteúdo de exemplo
+
+Utilizar imagens placeholders de:
+
+Placas em madeira decorativas
+
+Artesanato em madeira
+
+Placas personalizadas
