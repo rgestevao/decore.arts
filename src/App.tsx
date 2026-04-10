@@ -34,6 +34,7 @@ type GalleryItem = {
 	title: string
 	subtitle: string
 	detail: string
+	status: 'Disponível para entrega' | 'Sob encomenda'
 	image: string
 }
 
@@ -47,10 +48,43 @@ const getPageFromHash = (): AppPage =>
 
 const galleryItems: GalleryItem[] = [
 	{
+		title: 'Placa de Pensamento',
+		subtitle: 'Estilo afetivo',
+		detail:
+			'Peça personalizada com acabamento delicado para decorar com leveza e identidade.',
+		status: 'Disponível para entrega',
+		image: placaPensamento2,
+	},
+	{
+		title: 'Placa Churrasqueira',
+		subtitle: 'Tema especial',
+		detail:
+			'Peça artesanal pensada para áreas gourmet, presentes criativos e momentos de confraternização.',
+		status: 'Disponível para entrega',
+		image: placaChurrasqueira,
+	},
+	{
+		title: 'Porta-Retrato',
+		subtitle: 'Memórias em destaque',
+		detail:
+			'Peça artesanal pensada para eternizar momentos especiais com delicadeza.',
+		status: 'Disponível para entrega',
+		image: portaRetrato,
+	},
+	{
+		title: 'Porta Pensamento Sonho',
+		subtitle: 'Colorida e artesanal',
+		detail:
+			'Placa com pintura manual e lettering para trazer personalidade ao ambiente.',
+		status: 'Disponível para entrega',
+		image: quadroMensagem,
+	},
+	{
 		title: 'Porta Recordações Família',
 		subtitle: 'Linha minimalista',
 		detail:
 			'Arte afetiva em madeira com traço delicado para eternizar a família e os pets.',
+		status: 'Sob encomenda',
 		image: quadroFamilia,
 	},
 	{
@@ -58,6 +92,7 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Presente personalizado',
 		detail:
 			'Composição ilustrada com frase especial para decorar com memória e carinho.',
+		status: 'Sob encomenda',
 		image: quadroFamilia2,
 	},
 	{
@@ -65,20 +100,15 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Paixão em destaque',
 		detail:
 			'Peça personalizada para presentear quem ama futebol e identidade visual marcante.',
+		status: 'Sob encomenda',
 		image: quadroFlamengo,
-	},
-	{
-		title: 'Porta Pensamento Sonho',
-		subtitle: 'Colorida e artesanal',
-		detail:
-			'Placa com pintura manual e lettering para trazer personalidade ao ambiente.',
-		image: quadroMensagem,
 	},
 	{
 		title: 'Porta Maternidade Analua',
 		subtitle: 'Lua e borboletas',
 		detail:
 			'Decoração infantil delicada com pintura suave e toque lúdico em madeira.',
+		status: 'Sob encomenda',
 		image: quadroNomeFilha,
 	},
 	{
@@ -86,6 +116,7 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Arco-íris delicado',
 		detail:
 			'Peça personalizada com nome e elementos leves para quartos cheios de encanto.',
+		status: 'Sob encomenda',
 		image: quadroNomeFilha2,
 	},
 	{
@@ -93,6 +124,7 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Jardim personalizado',
 		detail:
 			'Com flores e borboletas, essa arte combina doçura, cor e acabamento artesanal.',
+		status: 'Sob encomenda',
 		image: quadroNomeFilha3,
 	},
 	{
@@ -100,6 +132,7 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Tema infantil',
 		detail:
 			'Modelo com corda e personagens ilustrados para portas e espaços infantis.',
+		status: 'Sob encomenda',
 		image: quadroNomeFilho,
 	},
 	{
@@ -107,6 +140,7 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Universo divertido',
 		detail:
 			'Arte em madeira com ilustração lúdica para compor uma decoração alegre.',
+		status: 'Sob encomenda',
 		image: quadroNomeFilho2,
 	},
 	{
@@ -114,6 +148,7 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Visual contemporâneo',
 		detail:
 			'Composição moderna em tons suaves para um resultado minimalista e elegante.',
+		status: 'Sob encomenda',
 		image: quadroNomeFilho3,
 	},
 	{
@@ -121,6 +156,7 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Safari delicado',
 		detail:
 			'Peça personalizada com animais fofos e acabamento feito à mão com carinho.',
+		status: 'Sob encomenda',
 		image: quadroNomeFilho4,
 	},
 	{
@@ -128,6 +164,7 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Peça decorativa',
 		detail:
 			'Acabamento artesanal em madeira para compor ambientes com personalidade.',
+		status: 'Sob encomenda',
 		image: banqueta,
 	},
 	{
@@ -135,6 +172,7 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Funcional e elegante',
 		detail:
 			'Peça feita à mão que une delicadeza, utilidade e identidade visual autoral.',
+		status: 'Sob encomenda',
 		image: portaEspelho,
 	},
 	{
@@ -142,20 +180,15 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Organização com afeto',
 		detail:
 			'Caixote decorativo em madeira para compor ambientes com charme e personalização.',
+		status: 'Sob encomenda',
 		image: caixotePersonalizado,
 	},
 	{
-		title: 'Placa Churrasqueira',
-		subtitle: 'Tema especial',
-		detail:
-			'Peça artesanal pensada para áreas gourmet, presentes criativos e momentos de confraternização.',
-		image: placaChurrasqueira,
-	},
-	{
-		title: 'Porta Retrato',
+		title: 'Placa Decorativa Livro',
 		subtitle: 'Leitura e personalidade',
 		detail:
 			'Modelo em madeira com composição delicada para cantinhos de leitura e ambientes acolhedores.',
+		status: 'Sob encomenda',
 		image: placaLivro,
 	},
 	{
@@ -163,20 +196,15 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Mensagem inspiradora',
 		detail:
 			'Letreiro artesanal em madeira para destacar frases cheias de significado.',
+		status: 'Sob encomenda',
 		image: placaPensamento,
-	},
-	{
-		title: 'Placa de Pensamento',
-		subtitle: 'Estilo afetivo',
-		detail:
-			'Peça personalizada com acabamento delicado para decorar com leveza e identidade.',
-		image: placaPensamento2,
 	},
 	{
 		title: 'Placa de Pensamento',
 		subtitle: 'Charme artesanal',
 		detail:
 			'Composição em madeira criada para valorizar mensagens especiais no ambiente.',
+		status: 'Sob encomenda',
 		image: placaPensamento3,
 	},
 	{
@@ -184,6 +212,7 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Detalhes únicos',
 		detail:
 			'Modelo autoral com pintura suave e presença acolhedora para vários espaços.',
+		status: 'Sob encomenda',
 		image: placaPensamento4,
 	},
 	{
@@ -191,6 +220,7 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Organização com estilo',
 		detail:
 			'Peça funcional em madeira para entrada, cozinha ou área social com toque artesanal.',
+		status: 'Sob encomenda',
 		image: portaChaves,
 	},
 	{
@@ -198,21 +228,15 @@ const galleryItems: GalleryItem[] = [
 		subtitle: 'Feito para o seu lar',
 		detail:
 			'Modelo em madeira ideal para organizar as chaves e valorizar a decoração do ambiente.',
+		status: 'Sob encomenda',
 		image: portaChaves01,
-	},
-	{
-		title: 'Porta-Retrato',
-		subtitle: 'Memórias em destaque',
-		detail:
-			'Peça artesanal pensada para eternizar momentos especiais com delicadeza.',
-		image: portaRetrato,
 	},
 ]
 
 const featuredItems = [
-	galleryItems[13],
-	galleryItems[14],
-	galleryItems[19],
+	galleryItems[1],
+	galleryItems[3],
+	galleryItems[16],
 	galleryItems[21],
 ]
 
@@ -438,10 +462,10 @@ function App() {
 									<div className="mt-6 space-y-5 text-[0.98rem] leading-8 text-[#785E61]/80 sm:text-lg">
 										<p>
 											A Decorê Arts nasceu do encontro entre sensibilidade,
-											criatividade e o desejo de transformar sentimentos em
-											peças cheias de significado. Mais do que itens
-											decorativos, cada trabalho carrega memória, afeto e um
-											cuidado especial em cada detalhe.
+											criatividade e o desejo de transformar sentimentos em peças
+											cheias de significado. Mais do que itens decorativos, cada
+											trabalho carrega memória, afeto e um cuidado especial em cada
+											detalhe.
 										</p>
 										<p>
 											Sua fundadora,{' '}
@@ -449,10 +473,9 @@ function App() {
 												Tamíris Paula Bento
 											</strong>
 											, bióloga e pós-graduada em Análise Clínica. Com um olhar
-											atento, delicado e apaixonado pelo fazer manual, encontrou
-											na arte em madeira uma forma de unir técnica, emoção e
-											propósito, criando peças personalizadas que celebram
-											histórias únicas.
+											atento, delicado e apaixonado pelo fazer manual, encontrou na
+											arte em madeira uma forma de unir técnica, emoção e propósito,
+											criando peças personalizadas que celebram histórias únicas.
 										</p>
 										<p>
 											O que começou de forma íntima e espontânea foi ganhando
@@ -468,12 +491,12 @@ function App() {
 											Biografia
 										</p>
 										<p className="mt-4 text-[0.98rem] leading-8 text-[#785E61]/78 sm:text-lg">
-											A Decorê Arts nasceu durante o período da pandemia, quando
-											a pausa na rotina trouxe também momentos de ansiedade. Foi
-											nesse tempo que descobri na pintura uma forma de me
-											expressar, ocupar a mente e transformar sentimentos em
-											arte. O que começou como uma maneira de passar o tempo
-											logo se tornou uma verdadeira paixão.
+											A Decorê Arts nasceu durante o período da pandemia, quando a
+											pausa na rotina trouxe também momentos de ansiedade. Foi nesse
+											tempo que descobri na pintura uma forma de me expressar,
+											ocupar a mente e transformar sentimentos em arte. O que
+											começou como uma maneira de passar o tempo logo se tornou uma
+											verdadeira paixão.
 										</p>
 									</div>
 								</div>
@@ -491,9 +514,9 @@ function App() {
 											Algumas peças para você conhecer
 										</h2>
 										<p className="mt-4 text-base leading-8 text-[#785E61]/78">
-											Selecionamos alguns trabalhos para apresentar a variedade
-											da Decorê Arts. Na galeria completa, você encontra todos
-											os modelos disponíveis nesta vitrine.
+											Selecionamos alguns trabalhos para apresentar a variedade da
+											Decorê Arts. Na galeria completa, você encontra todos os
+											modelos disponíveis nesta vitrine.
 										</p>
 									</div>
 
@@ -519,17 +542,35 @@ function App() {
 													className="h-72 w-full object-cover transition duration-500 group-hover:scale-[1.04]"
 												/>
 											</div>
-											<div className="p-6">
-												<p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#785E61]/58">
-													{item.subtitle}
-												</p>
-												<h3 className="mt-3 font-display text-2xl font-semibold leading-tight">
-													{item.title}
-												</h3>
-												<p className="mt-3 text-sm leading-7 text-[#785E61]/75">
-													{item.detail}
-												</p>
+										<div className="p-6">
+											<p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#785E61]/58">
+												{item.subtitle}
+											</p>
+											<h3 className="mt-3 font-display text-2xl font-semibold leading-tight">
+												{item.title}
+											</h3>
+											<div
+												className={`mt-4 inline-flex items-center gap-3 rounded-full border px-4 py-2 ${
+													item.status === 'Disponível para entrega'
+														? 'border-[#CFE7D9] bg-[#E8F4EE] text-[#295C3C]'
+														: 'border-[#E5E1DE] bg-[#F2F0EE] text-[#5E5550]'
+												}`}
+											>
+												<span
+													className={`h-2.5 w-2.5 rounded-full ${
+														item.status === 'Disponível para entrega'
+															? 'bg-[#34A853]'
+															: 'bg-[#B6B1AD]'
+													}`}
+												/>
+												<span className="text-sm font-semibold">
+													{item.status}
+												</span>
 											</div>
+											<p className="mt-3 text-sm leading-7 text-[#785E61]/75">
+												{item.detail}
+											</p>
+										</div>
 										</article>
 									))}
 								</div>
@@ -616,6 +657,24 @@ function App() {
 											<h2 className="mt-3 font-display text-3xl font-semibold leading-tight">
 												{item.title}
 											</h2>
+											<div
+												className={`mt-4 inline-flex items-center gap-3 rounded-full border px-4 py-2 ${
+													item.status === 'Disponível para entrega'
+														? 'border-[#CFE7D9] bg-[#E8F4EE] text-[#295C3C]'
+														: 'border-[#E5E1DE] bg-[#F2F0EE] text-[#5E5550]'
+												}`}
+											>
+												<span
+													className={`h-2.5 w-2.5 rounded-full ${
+														item.status === 'Disponível para entrega'
+															? 'bg-[#34A853]'
+															: 'bg-[#B6B1AD]'
+													}`}
+												/>
+												<span className="text-sm font-semibold">
+													{item.status}
+												</span>
+											</div>
 											<p className="mt-3 text-sm leading-7 text-[#785E61]/75">
 												{item.detail}
 											</p>
